@@ -2,17 +2,47 @@
 <html lang="en">
 <head>
     <title>My Website </title>
+    <style>
+       a:link,a:visited{
+        background-color: yellowgreen;
+        color : black;
+        padding: 10px 15px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+       }
+         a:hover,a:active{
+          background-color: orange;
+         }
+        body {
+  background-image: url('img_girl.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+    </style>
 </head>
-<body>
+<body style="background-image: url('http://genk.mediacdn.vn/2019/12/18/milky-way-la-gi-15766602699011392553632.jpg');">
     <!--dòng này k có tác dụng gì cả vì nó là comment=)-->
     <h1 style="background-color: bisque;text-align: center;">
         Welcome to My Website
     </h1>
-    <p style="font-size: xx-large;">
+    <p style="font-size: xx-large; color:red">
         Xin chào! Tôi là <abbr title="Phạm Phú Đức">PPĐ</abbr>, sinh năm 2006, hiện đang là <i>sinh viên</i> của trường <strong>Đại Học Thủy Lợi</strong>.
     </p>
-    <a href="https://soundcloud.com/ph-m-c-855761044/sets/phamduc1705" target="_top">Listen to Music with me</a>
-    <img src="https://phunugioi.com/wp-content/uploads/2020/02/hinh-anh-dep-thien-nhien.jpg" alt="Beautiful Nature" width="600" height="400">
-
+    <button onclick="showimage()">Click me to see my image </button>
+    <img id = "hinhanh"src="https://tse2.mm.bing.net/th/id/OIP.1-GAkNCjTxRnL1XdFkmf5AHaHa?pid=Api&P=0&h=220" alt="Logo trường" width="50" height="50" style="display: none;"><br>
+    <a href="https://soundcloud.com/ph-m-c-855761044/sets/phamduc1705" target="_blank">Listen to Music with me</a><br>
+    <a href="mailto:phamduc333666999@gmail.com">Mr.Beast hãy hợp tác với tôi!</a><br>
 </body>
 </html>
+<script>
+function showimage(){
+    const img = document.getElementById("hinhanh");
+    if (img.style.display === "none") {
+        img.style.display = "block";
+    } else {
+        img.style.display = "none";
+    }
+}
+</script>
